@@ -1,0 +1,10 @@
+{
+    "name": "node-red",
+    "description": "Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.",
+    "icon": "mdi-hexagon-slice-4",
+    "company": "Blue Robotics",
+    "version": "1.0.0",
+    "new_page": true,
+    "webpage": "https://github.com/patrickelectric/blueos-node-red",
+    "api": "/v1.0/docs"
+}
