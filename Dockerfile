@@ -45,7 +45,7 @@ LABEL tags='[\
   "code",\
   "development",\
   "ide",\
-  "node-red",\
+  "node-red"\
 ]'
 
 ENTRYPOINT ["/start.sh"]
