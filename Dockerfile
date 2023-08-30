@@ -1,4 +1,4 @@
-FROM nodered/node-red:3.0.2-14
+FROM nodered/node-red:3.0.2
 
 USER root
 
@@ -11,7 +11,7 @@ COPY register_service /service/register_service
 COPY start.sh /start.sh
 COPY entrypoint.sh /entrypoint.sh
 
-LABEL version="1.0.1"
+LABEL version="1.0.2"
 LABEL permissions='{\
   "ExposedPorts": {\
     "80/tcp": {}\
