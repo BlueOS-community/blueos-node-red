@@ -11,7 +11,7 @@ COPY register_service /service/register_service
 COPY start.sh /start.sh
 COPY entrypoint.sh /entrypoint.sh
 
-LABEL version="1.0.0"
+LABEL version="1.0.1"
 LABEL permissions='{\
   "ExposedPorts": {\
     "80/tcp": {}\
@@ -39,6 +39,12 @@ LABEL authors='[\
         "email": "patrickelectric@gmail.com"\
     }\
 ]'
+LABEL company='{\
+    "about": "",\
+    "name": "Blue Robotics",\
+    "email": "support@bluerobotics.com"\
+}'
+LABEL type="device-integration"
 LABEL readme="https://raw.githubusercontent.com/patrickelectric/blueos-node-red/master/README.md"
 LABEL type="other"
 LABEL tags='[\
