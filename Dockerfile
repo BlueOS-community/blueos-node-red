@@ -11,7 +11,7 @@ COPY register_service /service/register_service
 COPY start.sh /start.sh
 COPY entrypoint.sh /entrypoint.sh
 
-LABEL version="1.0.2"
+LABEL version="1.0.3"
 LABEL permissions='{\
   "ExposedPorts": {\
     "80/tcp": {}\
@@ -19,7 +19,7 @@ LABEL permissions='{\
   "HostConfig": {\
     "Privileged": true,\
     "Binds": [\
-      "/usr/blueos/userdata/node-red:/data:rw",\
+      "/usr/blueos/extensions/node-red:/data:rw",\
       "/etc/hostname:/etc/hostname:ro",\
       "/dev:/dev:rw",\
       "/:/home/workspace/host:rw"\
