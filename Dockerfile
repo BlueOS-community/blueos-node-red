@@ -45,7 +45,7 @@ LABEL company='{\
     "email": "support@bluerobotics.com"\
 }'
 LABEL type="device-integration"
-LABEL readme="https://raw.githubusercontent.com/patrickelectric/blueos-node-red/master/README.md"
+LABEL readme="https://raw.githubusercontent.com/BlueOS-Community/blueos-node-red/master/README.md"
 LABEL type="other"
 LABEL tags='[\
   "code",\
