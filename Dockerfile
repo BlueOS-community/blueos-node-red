@@ -4,6 +4,9 @@ USER root
 
 RUN apk update && apk add nginx
 
+RUN cd /usr/src/node-red && npm install node-red-node-serialport
+RUN cd /usr/src/node-red/node_modules/@serialport/bindings-cpp && npm run rebuild
+
 RUN mkdir -p /service
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY register_service /service/register_service
