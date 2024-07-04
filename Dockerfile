@@ -20,6 +20,9 @@ LABEL permissions='{\
     "80/tcp": {}\
   },\
   "HostConfig": {\
+    "ExtraHosts": [\
+      "blueos.local:host-gateway"\
+    ],\
     "Privileged": true,\
     "Binds": [\
       "/usr/blueos/extensions/node-red:/data:rw",\
