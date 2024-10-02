@@ -1,5 +1,6 @@
-FROM nodered/node-red:3.1.9
-
+# Use --build-arg NPM=18 for armv7 & aarch64, check: https://github.com/nodejs/docker-node/issues/1946
+ARG NPM="18"
+FROM nodered/node-red:4.0.3-${NPM}
 USER root
 
 RUN apk update && apk add nginx
