@@ -15,14 +15,14 @@ COPY register_service /service/register_service
 COPY start.sh /start.sh
 COPY entrypoint.sh /entrypoint.sh
 
-LABEL version="1.1.0"
+LABEL version="1.2.0"
 LABEL permissions='{\
   "ExposedPorts": {\
     "80/tcp": {}\
   },\
   "HostConfig": {\
     "ExtraHosts": [\
-      "blueos.local:host-gateway"\
+      "host.docker.internal:host-gateway"\
     ],\
     "Privileged": true,\
     "Binds": [\
